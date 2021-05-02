@@ -1,0 +1,42 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[left=20mm,top=30mm,text={170mm,240mm}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+\usepackage{times}
+\usepackage[IL2]{fontenc}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+    {\Huge
+    \textsc{ Vysoké učení technické v~Brně\\\huge Fakulta informačních technologií}\\
+    \vspace{\stretch{0.382}}}
+    \LARGE{Typografie a~publikování\,--\,4. projekt\\
+    \Huge Internet of Things\\}
+    \vspace{\stretch{0.618}}
+\end{center}
+{\Large \today \hfill
+Radoslav Páleník (xpalen05)}
+\end{titlepage}
+
+\section{Internet of Things}
+Internet vecí sa používa v informatike ako označenie pre sieť zariadení, ktoré sú schopné medzi sebou komunikovať. Táto komunikácia prebieha najčastejšie pomocou bezdrôtového pripojenia. Zozbierané dáta z týchto zariadení sa spracovávajú v cloudovej službe, prípdane aj priamo v užívateľskom zariadení (PC, smartfón).\cite{Sedlacek2019} Medzi zariadenia komunikujúce pomocou IoT sa radia rôzne senzory, domáce spotrebiče, či žiarovky. Výber takýchto zariadení je možné nájsť na \cite{Harvey2021}.
+
+\subsection{Komunikácia zariadení v sieti}
+Podpora sieťových protokolov pre zariadenia IoT pomerne široká. Problémy môže ale spôobiť veľký počet existujúcich štandradov od rôznych výrobcov. Sada protokolov, ktoré zariadenie používa závisí najmä na jeho technických možnostiach.Výhodou v aktuálnej dobe je aj množstvo technológií s vysokou rýchlosťou prenosu dát(5G, Wi-Fi, Bluetooth\dots). Pri návrhu je potrebné zvážiť aj náročnosť implementácie, alebo podporu pre zariadenia do budúcnosti.\cite{IoTPaP} 
+
+\subsection{Bezpečnosť IoT}
+Popularita IoT priviedla taktiež rôzne formy útokov, ktoré sa snažia hlavne znemožniť správne fungovanie zariadení, alebo odpočuť ich komunikáciu viď \cite{Urbanovsky2018}. Výhodou pre útočníkov je aj to, že jedným z najdôležitejčích faktorov vplývajúcim na tvorenie bezpečnostných chýb pri implementácii IoT zariadení je malé množstvo času, za ktorý majú byť tieto zariadenia navrhnuté.\cite{HackHandbook} Z týchto, ale aj iných dôvodov uvedených v \cite{Krajc2019} je vhodné monitorovať ich komunikáciu.
+
+\subsection{Rozširovanie poľa pôsobnosti}
+Vďaka posunu IoT technológií sme schopní v agrikultúre sledovať rôzne parametre, ktoré vplývajú na výslednú produktivitu daného statku. Na základe zachytených hodnôt zo senzorov umiestnených na zvieratách alebo rastlinách je možné predpokladať množstvo vyprodukovaných surovín(napr. mlieko, mäso, atď.), dodržiavať požiadavky na správny rast, alebo dokonca predvídanie chorôb, či tehotenstva viď \cite{Agro}. Podobné články sú dostupné na \cite{IEEE}.
+
+\subsection{Priemysel 4.0}
+Zaujímavým a veľmi perspektívnym sa javí aj IIoT\cite{IIoT} často nazývany aj ako Priemysel 4.0 alebo Machine-to-Machine (M2M). Základnou funkcionalitou sa IIoT od IoT nelíši. Rozdiel nastáva vo sfére využitia. Zatiaľ čo IoT dbá hlavne na ovládanie inteligentných zariadení v domácnosti, IIoT sa snaží o zvýšenie efektivity cielene pre potreby danej produkcie.\cite{Lewandowski2019}
+
+
+\newpage
+\bibliographystyle{czechiso}
+\renewcommand{\refname}{Literatúra}
+\bibliography{proj4}
+\end{document}
